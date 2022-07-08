@@ -16,18 +16,19 @@
 
 .bio {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 
   color: var(--primary-text-color);
 
-  @include md {
-    flex-direction: row;
-    align-items: center;
-  }
+  // @include md {
+  //   flex-direction: row;
+  //   align-items: center;
+  // }
 
   .introduction {
     display: flex;
@@ -101,9 +102,13 @@
   }
 
   .thumbnail-wrapper {
-    display: none;
+    display: block;
+    width: 150px;
+    height: 150px;
 
     @include md {
+      width: 250px;
+      height: 250px;
       display: block;
     }
   }

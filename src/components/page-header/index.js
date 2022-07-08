@@ -33,12 +33,16 @@ function PageHeader({ siteTitle }) {
               </Link>
             </div>
             <div className="trailing-section">
-              <Link className="link" to="/about">
-                about
-              </Link>
               <Link className="link" to="/posts">
-                posts
+                Posts
               </Link>
+              <Link className="link" to="/시중은행정기예금금리비교">
+                예금금리비교
+              </Link>
+              <Link className="link" to="/시중은행정기적금금리비교">
+                적금금리비교
+              </Link>
+
               <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
               />

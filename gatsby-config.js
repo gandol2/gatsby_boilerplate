@@ -7,6 +7,15 @@ module.exports = {
   siteMetadata: metaConfig,
 
   plugins: [
+    // 애드센스 광고 스위칭
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: metaConfig.google_ads_client,
+      },
+    },
+
+    'gatsby-plugin-cname',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,12 +59,7 @@ module.exports = {
         anonymize: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-3335499499331351`,
-      },
-    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -124,6 +128,13 @@ module.exports = {
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`,
+            },
+          },
         ],
       },
     },

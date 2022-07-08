@@ -4,6 +4,7 @@ import PageHeader from '../components/page-header';
 import PageFooter from '../components/page-footer';
 import ThemeSwitch from '../components/theme-switch';
 import './style.scss';
+require(`katex/dist/katex.min.css`);
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,16 +22,13 @@ const Layout = ({ children }) => {
       }
     }
   `);
-  const { title, author } = data.site.siteMetadata;
+  const { title, siteUrl, author } = data.site.siteMetadata;
 
   return (
     <div className="page-wrapper">
       <PageHeader siteTitle={title || `Title`} />
       <main className="page-content">{children}</main>
-      <PageFooter
-        author={author.name || `Author`}
-        githubUrl={author.social?.github || `https://www.github.com`}
-      />
+      <PageFooter author={author.name || `Author`} githubUrl={siteUrl || `/`} />
       <ThemeSwitch />
     </div>
   );

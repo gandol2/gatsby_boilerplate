@@ -7,6 +7,7 @@ import PostNavigator from '../components/post-navigator';
 import Post from '../models/post';
 import PostContent from '../components/post-content';
 import Utterances from '../components/utterances';
+import Adsense from '../components/adsense';
 
 function BlogTemplate({ data }) {
   const [viewCount, setViewCount] = useState(null);
@@ -36,6 +37,7 @@ function BlogTemplate({ data }) {
     <Layout>
       <Seo title={curPost?.title} description={curPost?.excerpt} />
       <PostHeader post={curPost} viewCount={viewCount} />
+      <Adsense client="ca-pub-3335499499331351" slot="3460720284" />
       <PostContent html={curPost.html} />
       <PostNavigator prevPost={prevPost} nextPost={nextPost} />
       {utterancesRepo && <Utterances repo={utterancesRepo} path={curPost.slug} />}
