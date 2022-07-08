@@ -1,5 +1,5 @@
 module.exports = {
-  title: `비교왕`,
+  title: `CNAME 테스트`,
   description: `시중 금융은행 금리를 비교 합니다`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.zoomkoding.com`,
