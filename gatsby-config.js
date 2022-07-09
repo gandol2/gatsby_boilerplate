@@ -3,17 +3,16 @@ const { NODE_ENV, CONTEXT: NETLIFY_ENV = NODE_ENV } = process.env;
 const metaConfig = require('./gatsby-meta-config');
 
 module.exports = {
-  // pathPrefix: '/blogtest',
   siteMetadata: metaConfig,
 
   plugins: [
     // 애드센스 광고 스위칭
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: metaConfig.google_ads_client,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-adsense`,
+    //   options: {
+    //     publisherId: metaConfig.google_ads_client,
+    //   },
+    // },
 
     'gatsby-plugin-cname',
     {
