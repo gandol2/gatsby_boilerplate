@@ -1,6 +1,4 @@
-<h1 align="center">
-  블로그 플랫폼
-</h1>
+<h1 align="center">Blog Boilerplate code</h1>
 
 **데모**: [**blogtest.gilpum.co.kr**](https://blogtest.gilpum.co.kr/)
 
@@ -31,7 +29,7 @@ blogtest.gilpum.co.kr
 
 ## gatsby-plugin-google-adsense
 
-[**gatsby-plugin-google-adsense 플러그인**](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-adsense/)
+[**gatsby-plugin-google-adsense Plugin**](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-adsense/)
 
 ```
 npm install --save gatsby-plugin-google-adsense
@@ -53,6 +51,6 @@ plugins: [
 
 ## gatsby-plugin-google-analytics
 
-[**gatsby-plugin-google-analytics 플러그인**](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/)
+[**gatsby-plugin-google-analytics Plugin**](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/)
 
 ...

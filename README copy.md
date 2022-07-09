@@ -1,6 +1,4 @@
-<h1 align="center">
-  블로그 플랫폼
-</h1>
+<h1 align="center">Blog Boilerplate code</h1>
 
 **Demo**: [**Korean**](https://blogtest.gilpum.co.kr/)
 
